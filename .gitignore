@@ -23,8 +23,18 @@
 hs_err_pid*
 replay_pid*
 
-# other
-target/
+#other
 .settings/
 .project
-.checkstyle
+
+#jcarbonate-logic
+jcarbonate-logic/.settings/
+jcarbonate-logic/target/
+jcarbonate-logic/.project
+jcarbonate-logic/.classpath
+
+#jcarbonate-plot
+jcarbonate-plot/.settings/
+jcarbonate-plot/target/
+jcarbonate-plot/.project
+jcarbonate-plot/.classpath

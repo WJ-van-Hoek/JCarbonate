@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <profiles version="23">
 	<profile kind="CodeFormatterProfile"
-		name="CheckStyle-Generated pandora" version="23">
+		name="formatter-jcarbonate" version="23">
 		<setting
 			id="org.eclipse.jdt.core.formatter.insert_space_after_ellipsis"
 			value="insert" />

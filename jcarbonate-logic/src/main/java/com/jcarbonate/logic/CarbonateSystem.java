@@ -70,7 +70,7 @@ public final class CarbonateSystem {
         _co3 = CO3.builder().value(CarbonateSystemLogic.calculateCO3(dic, hco3)).build();
         _h2co3 = H2CO3.builder().value(CarbonateSystemLogic.calculateH2CO3(dic, hco3, _co3)).build();
         _co2Aq = CO2aq.builder().value(CarbonateSystemLogic.calculateCO2Aq(_h2co3)).build();
-        _pCO2 = PCO2.builder().value(CarbonateSystemLogic.calculatePCO2(_co2Aq)).build();
+        _pCO2 = new PCO2(CarbonateSystemLogic.calculatePCO2(_co2Aq));
         _pH = new PH(CarbonateSystemLogic.calculatePH(_h2co3, hco3));
     }
 
