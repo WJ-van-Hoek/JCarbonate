@@ -160,7 +160,7 @@ public final class CarbonateSystemLogic {
         Objects.requireNonNull(h2co3, "h2co3 is needed to calculate pH");
         Objects.requireNonNull(hco3, "hco3 is needed to calculate pH");
         final double hPlus = (CarbonConstants.K1 * h2co3.getValue()) / hco3.getValue();
-        return -Math.log(hPlus);
+        return Math.min(-Math.log(hPlus), 14);
     }
 
     /**

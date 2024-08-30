@@ -48,7 +48,7 @@ public final class PH {
      */
     public PH(final double value) {
         if (value < 0.0 || value > 14.0) {
-            throw new IllegalArgumentException("pH value must be between 0 and 14.");
+            throw new IllegalArgumentException("pH value must be between 0 and 14, but was "+value+".");
         }
         _value = value;
     }

@@ -42,7 +42,7 @@ public final class DIC extends Specie {
      * This class extends {@link SpecieBuilder} and provides the implementation for building {@code DIC} instances.
      * </p>
      */
-    protected static final class DICBuilder extends SpecieBuilder<DICBuilder> {
+    public static final class DICBuilder extends SpecieBuilder<DICBuilder> {
 
         /**
          * Builds a new {@code DIC} instance using the current builder state.

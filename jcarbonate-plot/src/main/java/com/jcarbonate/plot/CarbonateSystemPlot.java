@@ -13,6 +13,7 @@ import org.jfree.data.xy.XYSeriesCollection;
 
 import java.awt.*;
 
+@SuppressWarnings("serial")
 public class CarbonateSystemPlot extends ApplicationFrame {
 
     public CarbonateSystemPlot(String title) {
@@ -24,8 +25,6 @@ public class CarbonateSystemPlot extends ApplicationFrame {
         plot.setDomainPannable(true);
         plot.setRangePannable(true);
         plot.setBackgroundPaint(new Color(255, 228, 196));
-
-        // Change the range axis to a logarithmic scale
         LogAxis yAxis = new LogAxis("Concentration (mol/L)"); // Set the label for the y-axis
         plot.setRangeAxis(yAxis);
 
