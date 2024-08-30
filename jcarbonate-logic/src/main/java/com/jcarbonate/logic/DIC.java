@@ -53,10 +53,5 @@ public final class DIC extends Specie {
         public DIC build() {
             return new DIC(this);
         }
-
-        @Override
-        protected DICBuilder self() {
-            return this;
-        }
     }
 }

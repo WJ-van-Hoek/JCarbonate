@@ -71,10 +71,5 @@ public final class CO2aq extends Specie {
         public CO2aq build() {
             return new CO2aq(this);
         }
-
-        @Override
-        protected CO2aqBuilder self() {
-            return this;
-        }
     }
 }
